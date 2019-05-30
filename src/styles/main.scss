@@ -1,1 +1,212 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: Arial, sans-serif;
+  vertical-align: baseline;
+}
 
+body, html {
+  min-height: 100vh;
+}
+
+a:link, a:hover, a:visited {
+  color: #8F96B7;
+  text-decoration: none;
+}
+
+p {
+  color: #505050;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.form-input {
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+label.form {
+  display: block;
+}
+
+label.form > .form-input {
+  display: block;
+}
+
+.clear {
+  clear: both;
+}
+
+.divisor{
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+}
+
+.btn {
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 0 20px;
+}
+
+.btn-primary {
+  background-color: #0f9a5a;
+}
+
+.btn-secondary {
+  background-color: #5D699A;
+}
+
+.light {
+  color: #FFF;
+}
+
+.dropdown {
+  display: none;
+}
+
+.nav li:hover > .dropdown {
+  display: block;
+  position: absolute;
+  background-color: #FFF;
+  width: 150px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0 1px 1px #ddd;
+  margin-top: 3px;
+}
+
+.nav li:hover > .dropdown li {
+  color: #1f2b5a;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+/* Header */
+#header {
+  position: relative;
+  margin-top: 0;
+  min-height: 40px;
+  background-color: #394783;
+  width: 100%;
+}
+
+/* Footer */
+#footer {
+  position: absolute;
+  bottom: 0;
+  min-height: 100px;
+  background-color: #F3F3F3;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.container-fluid {
+  padding: 10px 30px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.breadcrumbs {
+
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+  color: #a0a0a0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs ul li:not(:last-child):after {
+  content: ' / ';
+  padding: 0 10px;
+}
+
+/* SMARTPHONES */
+@media only screen and (min-width: 300px) {
+  .container {
+    padding: 10px 10px;
+  }
+  .nav li a {
+    font-size: 11px;
+  }
+}
+
+/* SMARTPHONES */
+@media only screen and (min-width: 480px) {
+  .container {
+    padding: 10px 10px;
+  }
+  .nav li a {
+    font-size: 12px;
+  }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 10px 30px;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 10px 100px;
+  }
+}
